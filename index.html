@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東榮會計服務公司</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab3f678e30.js" crossorigin="anonymous"></script>
+  </head>
+    <section class="header" id="home">
+      <nav>
+        <a href="index.html">
+          <img src="images/firm logo(1).png">
+        </a>
+        <div class="nav-links" id="NavLinks">
+          <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href ="#home">主頁</a></li>
+          <li><a href ="#about">關於</a></li>
+          <li><a href ="#service">服務</a></li>
+          <li><a href ="#contact">聯絡</a></li>
+        </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+
+       <body>
+
+      <div class="text-box">
+        <h1 class="slideleft">富有經驗的會計服務</h1>
+        <p class="slideleft">您是否被稅務問題所困擾?<br>我可以幫助您!</br></p>
+        <a href="file:///C:/Users/User/Desktop/HTML/index.html#contact" class="hero-btn slideleft">聯絡我們以了解更多信息</a>
+      </div>
+
+<!----------JavaScript for Toggle Menu------>
+<script>
+
+  var NavLinks = document.getElementById("NavLinks")
+
+  function showMenu(){
+    NavLinks.style.right = "0";
+  }  
+  function hideMenu(){
+    NavLinks.style.right = "-200px";
+  }
+
+</script>
+<!---------About Me--------->
+<section class="about-section" id="about">
+  <div class="inner-container">
+    <h2>關於</h2>
+    <p class="text">
+      我是黄鳳歧，一名專業的會計師。本人至少有三十多年會計及報稅工作經驗，為您解答稅務疑難，誠意為您服務。我曾幫過不少香港人及少數的居港外國人，以及大大小小的公司。
+    </p>
+    <p class="text2">
+      *本公司乃是私人公司，為大家提供優質的會計服務。
+    </p>
+    <div class="skills">
+      <span class="span">處理問題</span>
+      <span class="span">專業分析</span>
+      <span class="span">破解潛在漏洞</span>
+    </div>
+  </div>
+</section>
+
+<!---------服務--------->
+<section class="service" id="service">
+  <h2>為什麼選擇我們</h2>
+  <p1>有求必應且不拖泥带水</p1>
+  <div class="row">
+    <div class="course-col">
+      <h3>信譽<br><i class="fa-solid fa-thumbs-up"></i></br></h3>
+      <p1>服務過的客戶都非常滿意我們的工作成果<br>獲讚不少<br></p1>
+    </div>
+    <div class="course-col">
+      <h3>價錢<br><i class="fa-solid fa-hand-holding-dollar"></i></br></h3>
+      <p1>彈性的價錢制度<br>
+        可以商議價錢，
+        雙方滿意便可完成交易</p1>
+    </div>
+    <div class="course-col">
+      <h3>實力<br><i class="fa-solid fa-hand-fist"></i><br></h3>
+      <p1>曾在多間知名的會計公司工作過<br>擁有不少專業知識，
+        望能助大家一臂之力</p1>
+    </div>
+
+  </div>
+
+</section>
+
+<!---------Contact--------->
+<section class="contact" id="contact">
+  <div class="content">
+    <h2>聯絡</h2>
+    <p>我很樂意幫助你<br>如果有任何問題，請隨時和我聯繫</p>
+  </div>
+  <div class="container">
+    <div class="contactinfo">
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="text3">
+          <h2>地址</h2>
+          <p class="text-a">大埔中心1座21樓F室</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text3">
+          <h2>電話</h2>
+          <p class="text-a">+852 90129631</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="text3">
+          <h2>Email</h2>
+          <p class="text-a">wongfungkei@yahoo.com.hk</p>
+        </div>
+      </div> 
+    </div>
+    <div class="contactForm">
+      <form action="https://formsubmit.co/sori2456@gmail.com" method="POST">
+        <h2>發送訊息</h2>
+        <div class="inputBox">
+          <input type="text" id="name" name="" required="required">
+          <span class="span">姓名</span>
+        </div>
+        <div class="inputBox">
+          <input type="email" id="email" name="" required="required">
+          <span class="span">Email</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="phone" name="" required="required">
+          <span class="span">電話號碼</span>
+        </div>
+        <div class="inputBox">
+          <textarea required="required"></textarea>
+          <span>輸入您的訊息. . .</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" name="" value="發送">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</body>
+</html>
